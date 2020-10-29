@@ -1,0 +1,11 @@
+{
+    "name": "vivaweb/lgpd",
+    "description": "Componentes aderentes a LGPDO",
+    "authors": [
+        {
+            "name": "Eduardo Bona",
+            "email": "eduardobona@vivaweb.net"
+        }
+    ],
+    "require": {}
+}
