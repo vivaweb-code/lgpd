@@ -14,3 +14,4 @@ A mensagem fica fixada no rodapé e persite até que o usuário aceite.
 - Enviar dado para uma API em relação ao aceite do usuário
 - Parametrizar configurações de layout tornando o componente mais customizável
 - Testes! Testes! Testes!
+- Melhorar Estilos CSS deixando a mensagem mais bonita
