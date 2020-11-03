@@ -1,5 +1,7 @@
 # LGPD
 
+Um componente para PHP que dispõe de classes que geram mensagens de aceitação da política de privacidade e consentimento do usuário.
+
 ## Confirm
 
 Este layout exibe um ícone (svg), uma mensagem e um botão de ciência.
