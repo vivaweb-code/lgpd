@@ -1,11 +1,18 @@
 {
     "name": "vivaweb/lgpd",
-    "description": "Componentes aderentes a LGPDO",
+    "description": "Componentes aderentes a LGPD",
     "authors": [
         {
             "name": "Eduardo Bona",
             "email": "eduardobona@vivaweb.net"
         }
     ],
-    "require": {}
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Lgpd\\": "src/"
+        }
+    }
 }
