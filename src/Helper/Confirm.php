@@ -9,17 +9,10 @@ class Confirm extends LayoutAbstract
     protected $template = <<<HTML
 <div id="vwi_lgpd">
     <div class="vwi_lgpd-container">
-        <span class="vwi_lgpd-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 44 44" width="24px" height="24px" fill="none" stroke="currentColor">
-              <circle cx="22" cy="22" r="20" stroke-width="2"></circle>
-              <line x1="22" x2="22" y1="18" y2="33" stroke-width="3"></line>
-              <line x1="22" x2="22" y1="12" y2="15" stroke-width="3"></line>
-            </svg>
-        </span>
-        <button class="vwi_lgpd-btn" onclick="vwi_lgpd('click')">ACEITO</button>
         <p class="vwi_lgpd-text">
         :text
         </p>
+        <button class="vwi_lgpd-btn" onclick="vwi_lgpd('click')">ACEITO</button>
     </div>
 </div>
 
@@ -89,5 +82,3 @@ HTML;
         return $html;
     }
 }
-
-
