@@ -18,7 +18,30 @@ run ```composer require vivaweb/lgpd -n```
 
 for update use ```composer update -n```
 
-**NOTE: add your deployment key into repository settings**
+
+### Usando Deploy Keys em Homolog ou Production
+
+- **LEMBRE-SE: NÃO É RECOMENDADO EM HIPÓTESE ALGUM USAR SEU TOKEN EM SERVIDORES DE HOMOLOGAÇÃO OU PRODUÇÃO.
+- **USE SEU TOKEN APENAS EM SEU AMBIENTE DE DESENVOLVIMENTO**
+
+O GitHub (e recentemente o Bitbucket também) possui uma limitação de apenas uma chave por repositório e por isso, o usuário da homolog ou da production que já
+foi adicionado anteriormente para fazer o clone do projeto principal não vai funcionar no repositório vivaweb/lgpd.
+
+Por isso, será necessário criar uma chave para o repositório e configurar o usuário de maneira até simples
+
+```bash
+ssh-keygen -f ~/.ssh/vivaweb_lgpd -t rsa -b 4096
+```
+
+Depois edite seu arquivo ```vim ~/.ssh/config``` adicionando as seguintes linhas:
+
+```
+Host lgpd.github.com.vwi.com.br
+HostName github.com
+IdentityFile ~/.ssh/vivaweb_lgpd
+```
+
+Logo em seguida, poderá executar o require ou o update novamente, lembrando que o parâmetro -n precisa ser utilizado para funcionar
 
 ### Confirm
 - Este layout exibe um ícone (svg), uma mensagem e um botão de ciência.
