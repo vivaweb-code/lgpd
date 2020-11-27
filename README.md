@@ -14,10 +14,10 @@ composer.json
     ],
 ```
 
-run ```composer require vivaweb/lgpd -n```
+Para devs:
 
-for update use ```composer update -n```
-
+run ```composer require vivaweb/lgpd```
+for update use ```composer update```
 
 ### Usando Deploy Keys em Homolog ou Production
 
@@ -26,6 +26,9 @@ for update use ```composer update -n```
 
 O GitHub (e recentemente o Bitbucket também) possui uma limitação de apenas uma chave por repositório e por isso, o usuário da homolog ou da production que já
 foi adicionado anteriormente para fazer o clone do projeto principal não vai funcionar no repositório vivaweb/lgpd.
+
+run ```composer require vivaweb/lgpd -n```
+for update use ```composer update -n```
 
 Por isso, será necessário criar uma chave para o repositório e configurar o usuário de maneira até simples
 
